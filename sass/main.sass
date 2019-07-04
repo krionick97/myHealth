@@ -1,0 +1,60 @@
+@import 'fonts'
+@import 'mixins'
+@import 'colors'
+
+html
+  font-size: 10px
+
+body
+  max-width: 192rem
+  margin: 0 auto
+  +cera_medium
+  font-size: 1.6rem
+  color: $color-text-purple
+
+ul li
+  list-style-type: none
+
+.container
+  overflow: hidden
+  max-width: 192rem
+  overflow: hidden
+  // background-color: blue
+
+.title
+  font-size: 3.6rem
+  line-height: 1.5
+
+.link_frame
+  width: 19.5rem
+  height: 3.8rem
+  border: 0.2rem solid $color-frame
+  border-radius: 3rem
+  color: $color-white
+  text-decoration-line: none
+  +cera_bold
+  text-align: center
+  padding: 1.9rem 0 0
+  transition: 0.1s
+  &:active
+    transform: translateY(0.1rem)
+  &:focus
+    outline: none
+
+.link_pink
+  width: 18rem
+  height: 4rem
+  display: block
+  background-color: $color-pink
+  border-radius: 3rem
+  color: $color-white
+  text-decoration-line: none
+  text-align: center
+  padding: 2rem 0 0
+  transition: 0.1s
+  &:active
+    transform: translateY(0.1rem)
+  &:focus
+    outline: none
+
+@import 'header'

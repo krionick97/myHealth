@@ -1,0 +1,87 @@
+/* Header */
+.header
+  padding: 1.5rem 0 0
+  height: 100rem
+  &__nav
+    /* Header Menu */
+    max-width: 116rem
+    margin: 0 auto 10rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+    /* -------------------------- */
+  &__logo
+    /* Logo */
+    margin: 0.8rem 0 0
+    flex-basis: 28%
+    /* -------------------------- */
+  &__menu
+    z-index: 1
+    display: flex
+    &-link
+      /* Header menu-link */
+      color: $color-white
+      text-decoration-line: none
+      &:active
+        opacity: 0.8
+      &:focus
+        outline: none
+    &-active
+      position: relative
+      &:active
+        opacity: 1
+      &:before
+        position: absolute
+        display: block
+        content: ''
+        background-color: $color-white
+        width: 0.4rem
+        height: 0.4rem
+        border-radius: 50%
+        bottom: -0.7rem
+        left: 50%
+        transform: translateX(-50%)
+    &-item
+      &:not(:last-child)
+        margin-right: 5.2rem
+
+  &__slider
+    /* Header Slider */
+    &-container
+      max-width: 116rem
+      margin: 0 auto
+    &-link
+      margin: 0 auto
+    &-item
+      color: $color-white
+      position: relative
+      &:before
+        position: absolute
+        display: block
+        content: ''
+        width: 192rem
+        height: 76rem
+        background-repeat: no-repeat
+        background-size: 192rem
+        top: -17.5rem
+        left: 50%
+        transform: translateX(-50%)
+        z-index: -1
+      &1
+        &:before
+          background-image: url('../img/header-image-1.png')
+    /* -------------------------- */
+
+  &__title
+    text-align: center
+    max-width: 76rem
+    margin: 0 auto 4rem
+
+  &__paragraph
+    font-size: 2.4rem
+    text-align: center
+    max-width: 76rem
+    line-height: 1.5
+    margin: 0 auto 5rem
+
+/* ---------------------------------------------- */
