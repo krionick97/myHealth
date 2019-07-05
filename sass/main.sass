@@ -72,47 +72,5 @@ ul li
   &:focus
     outline: none
 
-.arrow
-  display: none
-
-/* Dots of Header-Slider */
-.dots
-  position: absolute
-  left: 50%
-  transform: translateX(-50%)
-  bottom: 9.5rem
-  display: flex
-  justify-content: center
-  align-items: center
-  border: 0.1rem solid rgba($color-white, 0.4)
-  width: 7.2rem
-  height: 1.6rem
-  border-radius: 0.8rem
-  li
-    // display: block
-    width: 1.6rem
-    height: 1.2rem
-    // background-color: $color-white
-    opacity: 0.4
-    position: relative
-    &:before
-      position: absolute
-      content: ''
-      display: block
-      width: 100%
-      background-color: $color-white
-      height: 0.1rem
-      top: 0.6rem
-    &:first-child
-      margin-rigth: 0.5rem
-    &:last-child
-      margin-left: 0.5rem
-    &:hover
-      cursor: pointer
-    button
-      display: none
-
-li.slick-active
-  opacity: 1 !important
 
 @import 'header'
