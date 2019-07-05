@@ -44,14 +44,10 @@ body {
   font-size: 1.6rem;
   color: #60759d; }
 
-ul li {
-  list-style-type: none; }
-
 .container {
   overflow: hidden;
   max-width: 192rem;
   overflow: hidden;
-  height: 600rem;
   position: relative; }
   .container:after {
     position: absolute;
@@ -94,7 +90,7 @@ ul li {
     outline: none; }
 
 .link_pink {
-  width: 18rem;
+  width: 20rem;
   height: 4rem;
   display: block;
   background-color: #e70067;
@@ -118,7 +114,7 @@ ul li {
 /* Header */
 .header {
   position: relative;
-  margin-bottom: 5rem; }
+  margin-bottom: 14rem; }
   .header__nav {
     /* Header Menu */
     top: 1.5rem;
@@ -183,8 +179,10 @@ ul li {
         -webkit-transform: translateX(-50%);
             -ms-transform: translateX(-50%);
                 transform: translateX(-50%); }
-    .header__menu-item:not(:last-child) {
-      margin-right: 5.2rem; }
+    .header__menu-item {
+      list-style-type: none; }
+      .header__menu-item:not(:last-child) {
+        margin-right: 5.2rem; }
   .header__slider {
     position: relative;
     /* Header Slider */
@@ -292,18 +290,20 @@ li.slick-active {
     margin-right: 3rem; } }
 
 @media (max-width: 1050px) {
-  .header__logo {
-    margin: 0.8rem 0 3rem; }
-  .header__nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column; }
-  .header__menu {
-    margin-bottom: 4rem; }
-  .header__slider-container {
-    margin: 26rem auto; }
+  .header {
+    margin-bottom: 10rem; }
+    .header__logo {
+      margin: 0.8rem 0 3rem; }
+    .header__nav {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    .header__menu {
+      margin-bottom: 4rem; }
+    .header__slider-container {
+      margin: 26rem auto; }
   .dots {
     bottom: 6rem; } }
 
@@ -316,10 +316,12 @@ li.slick-active {
     max-width: 90%; } }
 
 @media (max-width: 612px) {
-  .header__title {
-    font-size: 2.4rem; }
-  .header__paragraph {
-    font-size: 1.8rem; } }
+  .header {
+    margin-bottom: 6rem; }
+    .header__title {
+      font-size: 2.4rem; }
+    .header__paragraph {
+      font-size: 1.8rem; } }
 
 @media (max-width: 480px) {
   .header__title {
@@ -358,3 +360,87 @@ li.slick-active {
     bottom: 3.6rem; } }
 
 /* **************************************************** */
+/* Diary Section */
+.diary {
+  max-width: 116rem;
+  margin: 0 auto 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  height: 66rem; }
+  .diary__img {
+    -webkit-flex-basis: 34%;
+        -ms-flex-preferred-size: 34%;
+            flex-basis: 34%;
+    position: relative; }
+    .diary__img:before {
+      position: absolute;
+      content: '';
+      left: 2.4rem;
+      dispaly: block;
+      width: 33.5rem;
+      height: 65.2rem;
+      background-repeat: no-repeat;
+      background-image: url("../img/mobile-mockup.png");
+      z-index: 1; }
+  .diary__text {
+    margin: 8rem 0 0 1rem; }
+  .diary__title {
+    margin-bottom: 2.2rem; }
+  .diary__paragraph {
+    max-width: 46rem;
+    margin-bottom: 2.3rem;
+    line-height: 1.26; }
+  .diary__list {
+    margin: 0 0 4rem 1.4rem; }
+  .diary__item {
+    list-style-type: disc; }
+
+/* ---------------------------------------------------------------- */
+/* Diary Section Responsive */
+@media (max-width: 1020px) {
+  .diary {
+    height: 42rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-flow: column-reverse;
+        -ms-flex-flow: column-reverse;
+            flex-flow: column-reverse;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .diary__text {
+      margin: 0 auto 8rem;
+      max-width: 80%; }
+    .diary__link {
+      margin: 0 auto; }
+    .diary__img {
+      display: none; } }
+
+@media (max-width: 718px) {
+  .diary__title {
+    font-size: 2.8rem; } }
+
+@media (max-width: 546px) {
+  .diary__title {
+    font-size: 2.2rem; }
+  .diary__paragraph {
+    font-size: 1.4rem;
+    line-height: 1.18; } }
+
+@media (max-width: 430px) {
+  .diary {
+    height: 46rem; } }
+
+@media (max-width: 402px) {
+  .diary {
+    height: 50rem; } }
+
+/* ********************************************* */
