@@ -5,7 +5,19 @@
   display: flex
   justify-content: center
   z-index: 10
-  height: 66rem
+  height: 80rem
+  position: relative
+  &:before
+    position: absolute
+    content: ''
+    display: block
+    width: 49.2rem
+    height: 37.3rem
+    z-index: -1
+    background-repeat: no-repeat
+    background-image: url('../img/pulse-diagram.png')
+    bottom: 1rem
+    right: -29rem
   &__img
     flex-basis: 34%
     position: relative
@@ -40,6 +52,8 @@
     height: 42rem
     flex-flow: column-reverse
     justify-content: flex-end
+    &:before
+      display: none
     // align-items: center
     &__text
       margin: 0 auto 8rem
@@ -53,6 +67,7 @@
 
 @media (max-width: 718px)
   .diary
+    height: 46rem
     &__title
       font-size: 2.8rem
 
@@ -63,10 +78,6 @@
     &__paragraph
       font-size: 1.4rem
       line-height: 1.18
-
-@media (max-width: 430px)
-  .diary
-    height: 46rem
 
 @media (max-width: 402px)
   .diary

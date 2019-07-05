@@ -373,7 +373,19 @@ li.slick-active {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
-  height: 66rem; }
+  height: 80rem;
+  position: relative; }
+  .diary:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 49.2rem;
+    height: 37.3rem;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("../img/pulse-diagram.png");
+    bottom: 1rem;
+    right: -29rem; }
   .diary__img {
     -webkit-flex-basis: 34%;
         -ms-flex-preferred-size: 34%;
@@ -416,6 +428,8 @@ li.slick-active {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
+    .diary:before {
+      display: none; }
     .diary__text {
       margin: 0 auto 8rem;
       max-width: 80%; }
@@ -425,8 +439,10 @@ li.slick-active {
       display: none; } }
 
 @media (max-width: 718px) {
-  .diary__title {
-    font-size: 2.8rem; } }
+  .diary {
+    height: 46rem; }
+    .diary__title {
+      font-size: 2.8rem; } }
 
 @media (max-width: 546px) {
   .diary__title {
@@ -434,10 +450,6 @@ li.slick-active {
   .diary__paragraph {
     font-size: 1.4rem;
     line-height: 1.18; } }
-
-@media (max-width: 430px) {
-  .diary {
-    height: 46rem; } }
 
 @media (max-width: 402px) {
   .diary {
