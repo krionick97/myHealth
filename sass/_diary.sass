@@ -1,11 +1,11 @@
 /* Diary Section */
 .diary
   max-width: 116rem
-  margin: 0 auto 1rem
+  margin: 0 auto 
   display: flex
   justify-content: center
   z-index: 10
-  height: 80rem
+  height: 70rem
   position: relative
   &:before
     position: absolute
@@ -13,10 +13,10 @@
     display: block
     width: 49.2rem
     height: 37.3rem
-    z-index: -1
+    z-index: 10
     background-repeat: no-repeat
     background-image: url('../img/pulse-diagram.png')
-    bottom: 1rem
+    bottom: -9.4rem
     right: -29rem
   &__img
     flex-basis: 34%
@@ -43,15 +43,15 @@
     margin: 0 0 4rem 1.4rem
   &__item
     list-style-type: disc
-
 /* ---------------------------------------------------------------- */
 
 /* Diary Section Responsive */
 @media (max-width: 1020px)
   .diary
-    height: 42rem
+    height: 46rem
     flex-flow: column-reverse
     justify-content: flex-end
+    margin: 0 auto 6rem
     &:before
       display: none
     // align-items: center
@@ -67,7 +67,6 @@
 
 @media (max-width: 718px)
   .diary
-    height: 46rem
     &__title
       font-size: 2.8rem
 
@@ -78,9 +77,5 @@
     &__paragraph
       font-size: 1.4rem
       line-height: 1.18
-
-@media (max-width: 402px)
-  .diary
-    height: 50rem
 
 /* ********************************************* */
