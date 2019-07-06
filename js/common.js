@@ -8,25 +8,27 @@ $(document).ready(function () {
     nextArrow: '<div class="arrow arrow_prev"></div>',
     prevArrow: '<div class="arrow arrow_next"></div>',
     dotsClass: 'dots'
-    // responsive: [
-    //   {
-    //     breakpoint: 1920,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //     }
-    //   },
-      // {
-      //   breakpoint: 992,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1,
-      //   }
-      // },
-    // ]
   });
   // -----------------------------------------------------------
 
+  // Checking on empty filled inputs and Ajax send
+  // $('#form').submit(function() { 
+  //   if($('#email').val() == '') {
+  //     return false;
+  //   }
+  //   $.ajax({
+  //     type: "POST",
+  //     url: "mail/mail.php",
+  //     data: $(this).serialize()
+  //   }).done(function() {
+  //     $('.popup').fadeIn();
+  //     $(this).find('input').val('');
+  //     $('#form').trigger('reset');
+  //   });
+  //   return false;
+  // });
+  //------------------------------------------------
+  
 
 
 }); // End Document Ready

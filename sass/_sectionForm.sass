@@ -1,0 +1,66 @@
+/* Section Form */
+.sectionForm
+  background-color: $color-grey2
+  padding: 14rem 0 16rem
+  &__title, &__text
+    text-align: center
+  &__title
+    max-width: 90%
+    margin: 0 auto 4rem
+  &__text
+    font-size: 2.4rem
+    max-width: 59rem
+    margin: 0 auto 5.5rem
+    line-height: 1.5
+  &__form
+    display: flex
+    justify-content: center
+  &__input
+    width: 36rem
+    height: 6rem
+    padding: 0 1.7rem
+    margin-right: 2rem
+    box-sizing: border-box
+    border-radius: 3rem
+    border: 0.1rem solid $color-input
+    background-color: transparent
+    +cera_light
+    font-size: 1.4rem
+  &__submit
+    border: none
+    +cera_bold
+    font-size: 1.6rem
+    height: 6rem
+    padding: 0
+    width: 16rem
+    margin-left: 2rem
+/* ---------------------------------- */
+
+/* Section Form Responsive */
+@media (max-width: 660px)
+  .sectionForm
+    padding: 8rem 0 10rem
+    &__title
+      font-size: 2.4rem
+    &__text
+      +cera_regular
+      font-size: 1.6rem
+      max-width: 90%
+    &__input
+      width: 20rem
+
+@media (max-width: 440px)
+  .sectionForm
+    &__title
+      font-size: 2.2rem
+    &__form
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+    &__input, &__submit
+      width: 90%
+    &__input
+      margin: 0 auto 2rem
+    &__submit
+      margin: 0 auto
+/* *********************************** */

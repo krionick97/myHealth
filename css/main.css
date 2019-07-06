@@ -620,7 +620,7 @@ li.slick-active {
 /* Specialists Section */
 .specialists {
   padding: 8rem 0 16.35rem;
-  background-color: #e2e8f5; }
+  background-color: #f1f3fb; }
   .specialists__container {
     max-width: 116rem;
     margin: 0 auto;
@@ -664,18 +664,18 @@ li.slick-active {
     height: 52rem; } }
 
 @media (max-width: 1560px) {
+  .specialists__img:after {
+    width: 78rem;
+    height: 53rem;
+    top: -12rem; } }
+
+@media (max-width: 1480px) {
   .specialists {
     padding: 8rem 0 8rem; }
     .specialists__img:after {
-      width: 78rem;
-      height: 53rem;
-      top: -12rem; } }
-
-@media (max-width: 1480px) {
-  .specialists__img:after {
-    width: 74rem;
-    height: 49rem;
-    top: -10rem; } }
+      width: 74rem;
+      height: 49rem;
+      top: -10rem; } }
 
 @media (max-width: 1410px) {
   .specialists__img:after {
@@ -757,5 +757,89 @@ li.slick-active {
       display: none; }
       .specialists__img:after {
         display: none; } }
+
+/* *********************************** */
+/* Section Form */
+.sectionForm {
+  background-color: #e2e8f5;
+  padding: 14rem 0 16rem; }
+  .sectionForm__title, .sectionForm__text {
+    text-align: center; }
+  .sectionForm__title {
+    max-width: 90%;
+    margin: 0 auto 4rem; }
+  .sectionForm__text {
+    font-size: 2.4rem;
+    max-width: 59rem;
+    margin: 0 auto 5.5rem;
+    line-height: 1.5; }
+  .sectionForm__form {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .sectionForm__input {
+    width: 36rem;
+    height: 6rem;
+    padding: 0 1.7rem;
+    margin-right: 2rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-border-radius: 3rem;
+            border-radius: 3rem;
+    border: 0.1rem solid #4f699b;
+    background-color: transparent;
+    font-family: 'Cera Round Pro Light', sans-serif;
+    font-size: 1.4rem; }
+  .sectionForm__submit {
+    border: none;
+    font-family: 'Cera Round Pro Bold', sans-serif;
+    font-size: 1.6rem;
+    height: 6rem;
+    padding: 0;
+    width: 16rem;
+    margin-left: 2rem; }
+
+/* ---------------------------------- */
+/* Section Form Responsive */
+@media (max-width: 660px) {
+  .sectionForm {
+    padding: 8rem 0 10rem; }
+    .sectionForm__title {
+      font-size: 2.4rem; }
+    .sectionForm__text {
+      font-family: 'Cera Round Pro Regular', sans-serif;
+      font-size: 1.6rem;
+      max-width: 90%; }
+    .sectionForm__input {
+      width: 20rem; } }
+
+@media (max-width: 440px) {
+  .sectionForm__title {
+    font-size: 2.2rem; }
+  .sectionForm__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .sectionForm__input, .sectionForm__submit {
+    width: 90%; }
+  .sectionForm__input {
+    margin: 0 auto 2rem; }
+  .sectionForm__submit {
+    margin: 0 auto; } }
 
 /* *********************************** */
