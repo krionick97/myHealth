@@ -42,7 +42,8 @@ body {
   margin: 0 auto;
   font-family: 'Cera Round Pro Medium', sans-serif;
   font-size: 1.6rem;
-  color: #60759d; }
+  color: #60759d;
+  background-color: #fafaff; }
 
 .container {
   overflow: hidden;
@@ -57,9 +58,8 @@ body {
     height: 600rem;
     background-image: url("../img/ellepses.png");
     background-repeat: no-repeat;
-    background-position-x: -21rem;
     z-index: 0;
-    top: 1rem;
+    top: 0;
     left: 0;
     pointer-events: none; }
 
@@ -517,3 +517,98 @@ li.slick-active {
     font-size: 2.6rem; } }
 
 /* ************************************************ */
+/* Monitoring Section */
+.monitoring {
+  padding: 15rem 0 23rem;
+  position: relative;
+  overflow: hidden; }
+  .monitoring:before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 192rem;
+    height: 218rem;
+    background-repeat: no-repeat;
+    background-image: url("../img/monitoring-bg.png");
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    top: -35rem;
+    z-index: -1; }
+  .monitoring__title {
+    text-align: center;
+    margin: 0 auto 9.6rem; }
+  .monitoring__container {
+    max-width: 104rem;
+    margin: 0 auto; }
+  .monitoring__item {
+    max-width: 57.2rem;
+    position: relative; }
+    .monitoring__item:not(:last-child) {
+      margin-bottom: 8.5rem; }
+  .monitoring__img {
+    display: block;
+    width: 10.2rem;
+    height: auto;
+    position: absolute;
+    left: -10.8rem;
+    top: -3.6rem; }
+  .monitoring__subtitle {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem; }
+  .monitoring__paragraph {
+    line-height: 1.5; }
+
+/* ------------------------------------------------- */
+/* /* Monitoring Section Responsive */
+@media (max-width: 1280px) {
+  .monitoring__container {
+    max-width: 80%; } }
+
+@media (max-width: 1160px) {
+  .monitoring {
+    padding: 10rem 0 12rem; }
+    .monitoring:before {
+      display: none; }
+    .monitoring__title {
+      max-width: 90%;
+      font-size: 2.8rem; }
+    .monitoring__item {
+      margin: 0 auto;
+      max-width: 55rem; } }
+
+@media (max-width: 800px) {
+  .monitoring__title {
+    font-size: 2.6rem;
+    margin: 0 auto 6rem; }
+  .monitoring__item {
+    max-width: 50rem; }
+    .monitoring__item:not(:last-child) {
+      margin-bottom: 8rem; }
+  .monitoring__img {
+    display: block;
+    top: -1.2rem;
+    left: 50%;
+    -webkit-transform: translateX(-62%);
+        -ms-transform: translateX(-62%);
+            transform: translateX(-62%);
+    opacity: 0.4; }
+  .monitoring__subtitle {
+    text-align: center; }
+  .monitoring__paragraph {
+    text-align: justify;
+    font-size: 1.4rem; } }
+
+@media (max-width: 460px) {
+  .monitoring {
+    padding: 8rem 0 10rem; }
+    .monitoring__title {
+      font-size: 2.4rem; }
+    .monitoring__subtitle {
+      font-size: 2rem; }
+    .monitoring__paragraph {
+      font-family: 'Cera Round Pro Regular', sans-serif;
+      text-align: left; } }
+
+/* ********************************************** */

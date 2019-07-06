@@ -1,0 +1,94 @@
+/* Monitoring Section */
+.monitoring
+  padding: 15rem 0 23rem
+  position: relative
+  overflow: hidden
+  &:before
+    position: absolute
+    content: ''
+    display: block
+    width: 192rem
+    height: 218rem
+    background-repeat: no-repeat
+    background-image: url('../img/monitoring-bg.png')
+    left: 50%
+    transform: translateX(-50%)
+    top: -35rem
+    z-index: -1
+  &__title
+    text-align: center
+    margin: 0 auto 9.6rem
+  &__container
+    max-width: 104rem
+    margin: 0 auto
+  &__item
+    max-width: 57.2rem
+    position: relative
+    &:not(:last-child)
+      margin-bottom: 8.5rem
+  &__img
+    display: block
+    width: 10.2rem
+    height: auto
+    position: absolute
+    left: -10.8rem
+    top: -3.6rem
+  &__subtitle
+    font-size: 2.4rem
+    margin-bottom: 1.6rem
+  &__paragraph
+    line-height: 1.5
+
+/* ------------------------------------------------- */
+
+/* /* Monitoring Section Responsive */
+@media (max-width: 1280px)
+  .monitoring
+    &__container
+      max-width: 80%
+
+@media (max-width: 1160px)
+  .monitoring
+    padding: 10rem 0 12rem
+    &:before
+      display: none
+    &__title
+      max-width: 90%
+      font-size: 2.8rem
+    &__item
+      margin: 0 auto
+      max-width: 55rem
+
+@media (max-width: 800px)
+  .monitoring
+    &__title
+      font-size: 2.6rem
+      margin: 0 auto 6rem
+    &__item
+      max-width: 50rem
+      &:not(:last-child)
+        margin-bottom: 8rem
+    &__img
+      display: block
+      top: -1.2rem
+      left: 50%
+      transform: translateX(-62%)
+      opacity: 0.4
+    &__subtitle
+      text-align: center
+    &__paragraph
+      text-align: justify
+      font-size: 1.4rem
+
+@media (max-width: 460px)
+  .monitoring
+    padding: 8rem 0 10rem
+    &__title
+      font-size: 2.4rem
+    &__subtitle
+      font-size: 2rem
+    &__paragraph
+      +cera_regular
+      text-align: left
+
+/* ********************************************** */
