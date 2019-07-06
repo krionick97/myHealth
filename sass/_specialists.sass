@@ -1,0 +1,128 @@
+/* Specialists Section */
+.specialists
+  padding: 8rem 0 16.35rem
+  background-color: $color-grey2
+  &__container
+    max-width: 116rem
+    margin: 0 auto
+    display: flex
+    justify-content: center
+  &__img
+    width: 48%
+    height: 1rem
+    position: relative
+    &:after
+      position: absolute
+      display: block
+      content: ''
+      width: 97.6rem
+      height: 64rem
+      background-repeat: no-repeat
+      background-image: url('../img/statistics.png')
+      background-size: 100%
+      z-index: 1
+      right: 3.2rem
+      top: -16.4rem
+  &__title
+    margin-bottom: 3rem
+  &__list
+    margin-left: 1.8rem
+    &-item
+      max-width: 58rem
+/* ---------------------------------------------------- */
+
+/* Specialists S. Responsive */
+@media (max-width: 1850px)
+  .specialists
+    &__img
+      &:after
+        width: 80rem
+        height: 52rem
+
+@media (max-width: 1560px)
+  .specialists
+    padding: 8rem 0 8rem
+    &__img
+      &:after
+        width: 78rem
+        height: 53rem
+        top: -12rem
+
+@media (max-width: 1480px)
+  .specialists
+    &__img
+      &:after
+        width: 74rem
+        height: 49rem
+        top: -10rem
+
+@media (max-width: 1410px)
+  .specialists
+    &__img
+      &:after
+        width: 70rem
+        height: 49rem
+        top: -9.6rem
+
+@media (max-width: 1340px)
+  .specialists
+    padding: 6rem 0 48rem
+    &__container
+      flex-direction: column-reverse
+      justify-content: flex-start
+      align-items: center
+      width: 90%
+    &__img
+      width: 100%
+      &:after
+        top: 0
+        right: 50%
+        width: 65rem
+        height: 44rem
+        transform: translateX(55%)
+
+@media (max-width: 780px)
+  .specialists
+    padding: 6rem 0 48rem
+    &__img
+      &:after
+        width: 54rem
+        height: 36rem
+        transform: translateX(52%)
+
+@media (max-width: 580px)
+  .specialists
+    padding: 5rem 0 40rem
+    &__img
+      &:after
+        width: 52rem
+        height: 36rem
+        transform: translateX(50%)
+    &__title
+      text-align: center
+      font-size: 2.8rem
+    &__list
+      &-paragraph
+        +cera_regular
+        font-size: 1.4rem
+
+@media (max-width: 540px)
+  .specialists
+    padding: 5rem 0 30rem
+    &__img
+      &:after
+        width: 40rem
+        height: 27rem
+        transform: translateX(50%)
+
+@media (max-width: 420px)
+  .specialists
+    padding: 5rem 0 5rem
+    &__list
+      margin: 0 0 0 1.8rem
+    &__img
+      display: none
+      &:after
+        display: none
+
+/* *********************************** */
